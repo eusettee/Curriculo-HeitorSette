@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff; /* fundo branco, sem borda ao redor */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%; /* ocupa 100% da largura da tela */
+  min-height: 100vh; /* ocupa toda a altura visível */
+  margin: 0; /* remove margens */
+  background: white;
+  border-radius: 0; /* remove bordas arredondadas */
+  box-shadow: none; /* remove sombra */
+  padding: 40px 60px; /* espaçamento interno para o conteúdo respirar */
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 20px;
+}
+
+.foto-perfil {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #0056b3;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#input-foto {
+  display: none;
+}
+
+.header h1 {
+  margin: 10px 0 5px 0;
+  color: #0056b3;
+}
+
+.header p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.header a {
+  color: #5a2eca;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.secao {
+  margin-top: 25px;
+}
+
+.secao h2 {
+  border-bottom: 2px solid #0056b3;
+  color: #0056b3;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.secao p, .secao li {
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li::before {
+  content: "• ";
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.botoes {
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+
+button {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #003f87;
+}
+
+/* Impressão: remove margens e fundos */
+@media print {
+  body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    background: #fff;
+  }
+}
